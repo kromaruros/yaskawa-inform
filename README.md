@@ -10,13 +10,13 @@ Syntax highlightning & code completion for JOB Files
 
 >Syntax highlight in Action ...
 
-![Syntax](https://github.com/kromaruros/yaskawa-inform/master/images/syntax.png)
+![Syntax](https://github.com/kromaruros/yaskawa-inform/tree/master/images/syntax.png)
 
 
 
 >Code completion in Action ...
 
-![completion](https://github.com/kromaruros/yaskawa-inform/master/images/completion.gif)
+![completion](https://github.com/kromaruros/yaskawa-inform/tree/master/images/completion.gif)
 
 
 ---
