@@ -1,6 +1,6 @@
 # <span style="color:blue">**Yaskawa**</span> Robot Language support for Visual Studio Code
 
-# <img src="https://github.com/kromaruros/yaskawa-inform/master/images/logo1.png" width="40" height="40" />askawa Robot Language support
+# <img src="https://raw.githubusercontent.com/kromaruros/yaskawa-inform/master/images/logo1.png" width="40" height="40" />Yaskawa Robot Language support
 
 Syntax highlightning & code completion for JOB Files
 
@@ -10,13 +10,13 @@ Syntax highlightning & code completion for JOB Files
 
 >Syntax highlight in Action ...
 
-![Syntax](https://github.com/kromaruros/yaskawa-inform/master/images/syntax.png)
+![Syntax](https://raw.githubusercontent.com/kromaruros/yaskawa-inform/master/images/syntax.png)
 
 
 
 >Code completion in Action ...
 
-![completion](https://github.com/kromaruros/yaskawa-inform/master/images/completion.gif)
+![completion](https://raw.githubusercontent.com/kromaruros/yaskawa-inform/master/images/completion.gif)
 
 
 ---
