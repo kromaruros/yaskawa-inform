@@ -27,15 +27,15 @@ Calling out known issues can help limit users opening duplicate issues against y
 ---
 ## Release Notes
 Users appreciate release notes as you update your extension.  
-[check Changelog for Details on this project](CHANGELOG.md)
+[check Changelog for Details on this project](https://github.com/kromaruros/yaskawa-inform/blob/master/CHANGELOG.md)
 
 ## 0.1.0 - 2021.01.15
 - initial release
 
 
 --------------------------------------------------------
-## ToDo : 
-* Many things... :-)
+## 0.2.0 - 2021.01.15
+* Minor improvements
 
 ---
 

@@ -43,7 +43,7 @@
 			"name": "string.quoted.double.inform"
 		},
 		{
-			"begin": "'",
+			"begin": "'|COMM",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.begin.inform"
@@ -55,12 +55,12 @@
 					"name": "punctuation.definition.string.end.inform"
 				}
 			},
-			"name": "string.quoted.single.inform"
+			"name": "comment.line.inform"
 		},
 		{
-			"begin": "!",
-			"end": "\\n",
-			"name": "comment.line.inform"
+			"begin": "\\*",
+			"end": "[\\s\\r\\n]+",
+			"name": "string.quoted.double.inform"
 		},
 		{
 			"captures": {
@@ -78,15 +78,15 @@
 		"control-words": {
 			"patterns": [
 				{
-					"match": "\\b(IFTHEN|IFTHENEXP|ELSEIF|ELSEIFEXP|ELSE|ENDIF)\\b",
+					"match": "\\b(IFTHEN|IFTHENEXP|IF|ELSEIF|ELSEIFEXP|ELSE|ENDIF)\\b",
 					"name": "keyword.control.inform"
 				},
 				{
-					"match": "\\b(FOR|START|ABC|TO|STEP|ENDFOR)\\b",
+					"match": "\\b(FOR|START|TO|STEP|ENDFOR)\\b",
 					"name":  "keyword.control.inform"
 				},
 				{
-					"match": "\\b(JUMP|RET|NOP|END|PAUSE|CWAIT|MSG|INPUT|ADVINIT|ADVSTOP|PRINT|CLS|ABORT|SETUALM|DIALOG)\\b",
+					"match": "\\b(JUMP|LABEL|CALL|RET|NOP|END|PAUSE|TIMER|PSTART|PWAIT|CWAIT|MSG|INPUT|ADVINIT|ADVSTOP|PRINT|CLS|ABORT|SETUALM|DIALOG|CLEAR|STACK)\\b",
 					"name": "keyword.control.inform"
 				},
 				{
@@ -98,9 +98,15 @@
 					"name": "keyword.control.inform"
 				},
 				{
-					"match": "\\b(SETTM|TSTART|TSTOP|TRESET)\\b",
+					"match": "\\b(SET|GETE|SETE|GETS|CNVRT|MULMAT|EXPRESS|GETARG|ARGF|INC|SQRT)\\b",
+					"name": "keyword.control.inform"
+				},
+				{
+					"match": "\\b(PULSE|WAIT|DOUT|DIN|GETARG|IARG|ARGF.|WAIT|IN|OT|IG|OG|UF|ON|OFF|PULSE)\\b",
 					"name": "keyword.control.inform"
 				}
+
+				
 			]
 		},
 		"operators": {
@@ -142,7 +148,7 @@
 					"name": "storage.type.inform"
 				},
 				{
-					"match": "\\b(POS|NPOS|MOVJ|MOVL|MOVC|MOVS|TSYNC|SMOVC|SMOVL|REFP|SREFP)\\b",
+					"match": "\\b(POS|NPOS|MOVJ|MOVL|MOVC|MOVS|V|VJ|TSYNC|SMOVC|SMOVL|REFP|SREFP)\\b",
 					"name": "storage.type.inform"
 				},
 				{
@@ -154,7 +160,7 @@
 					"name": "storage.type.inform"
 				},
 				{
-					"match": "\\b(PULSE|WAIT|DOUT|DIN|GETARG|INST|ATTR|LVARS)\\b",
+					"match": "\\b(INST|ATTR|LVARS)\\b",
 					"name": "support.type.bpr.inform"
 				}
 			]
@@ -175,11 +181,11 @@
 				},
 				{
 					"name": "support.function.inform",
-					"match": "(?i)\\b(CALL|TIMER)\\b"
+					"match": "(?i)\\b(JOB|MACRO)\\b"
 				},
 				{
 					"name": "support.function.inform",
-					"match": "(?i)\\b(ARCON|ARCOF|IN|OT|IG|OG|D|WVOF|WVON|SWVOF|SWVON|ASF|WEV|MJ|UF|SETREG|PAUSE|SFTOF|SFTON)\\b"
+					"match": "(?i)\\b(ARCON|ARCOF|WVOF|WVON|SWVOF|SWVON|ASF|WEV|MJ|SETREG|SFTOF|SFTON)\\b"
 				}
 			]
 		}
